@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icon.png"/>
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/28a9d8948a.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <img src="assets/Logo.png" alt="Logo" class="logo">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-md-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">profile</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="logout()">Logout</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+      </div>
+    </div>
+
+
+    <section class="bgsection">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col">
+              <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item active" aria-current="page" id="initialname"></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-4 color">
+                <div class="card-body text-center">
+                  <img src="assets/avatar.webp" alt="avatar"
+                    class="rounded-circle img-fluid imagesize">
+                  <h5 class="my-3 text-white" id="username">cannot fetch</h5>
+                  <p class="mb-1 text-white-50" id="role">Full Stack Developer &nbsp; <a href="" class="blackhvr" title="Update"><i class="far fa-edit"></i></a></p>
+                  <p class="text-white-50 mb-4" id="gender">Male</p>
+                  <div class="d-flex justify-content-center mb-2">
+                    <button type="button" class="btn btn-dark">Follow</button>
+                    <button type="button" class="btn btn-outline-dark ms-1">Message</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4 mb-lg-0">
+                <div class="card-body p-0">
+                  <ul class="list-group list-group-flush rounded-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <i class="fas fa-globe fa-lg text-warning"></i>
+                      <p class="mb-0">https://guvi.in</p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <i class="fab fa-github fa-lg ash"></i>
+                      <p class="mb-0">guvi</p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <i class="fab fa-twitter fa-lg skyblue"></i>
+                      <p class="mb-0">@guvi</p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <i class="fab fa-instagram fa-lg pink"></i>
+                      <p class="mb-0">guvi</p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <i class="fab fa-facebook-f fa-lg darkblue"></i>
+                      <p class="mb-0">guvi</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0" >Full Name</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="username2">cannot fetch</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="useremail">cannot fetch @</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Phone</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="phone">(097) 234-5678 &nbsp; <a href="" class="blackhvr" title="Update"><i class="far fa-edit"></i></a></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">DOB</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="dob">02/03/2002 &nbsp; <a href="" class="blackhvr" title="Update"><i class="far fa-edit"></i></a></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Age</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0" id="age">21 &nbsp; <a href="" class="blackhvr" title="Update"><i class="far fa-edit"></i></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card mb-4 mb-md-0">
+                    <div class="card-body">
+                      <p class="mb-4"><span class="text-primary font-italic me-1">Assigment</span> Guvi Task
+                      </p>
+                      <p class="mb-1 fontsize">Web Design</p>
+                      <div class="progress rounded divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="mt-4 mb-1 fontsize">JS</p>
+                      <div class="progress rounded divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="mt-4 mb-1 fontsize">PHP</p>
+                      <div class="progress rounded divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="mt-4 mb-1 fontsize">MySQL</p>
+                      <div class="progress rounded divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="mt-4 mb-1 fontsize">Mongo DB</p>
+                      <div class="progress rounded mb-2 divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card mb-4 mb-md-0">
+                    <div class="card-body">
+                      <p class="mb-4"><span class="text-primary font-italic me-1">Assigment</span> Guvi Task
+                      </p>
+                      <p class="mb-1 fontsize">Ajax</p>
+                      <div class="progress rounded divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="mt-4 mb-1 fontsize">jquery</p>
+                      <div class="progress rounded divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="mt-4 mb-1 fontsize">HTML</p>
+                      <div class="progress rounded divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="mt-4 mb-1 fontsize">CSS</p>
+                      <div class="progress rounded divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <p class="mt-4 mb-1 fontsize">Node JS</p>
+                      <div class="progress rounded mb-2 divheight">
+                        <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="js/profile.js"></script>
+      <script src="js/index.js"></script>
+    
+</body>
+</html>

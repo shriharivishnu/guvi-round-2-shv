@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icon.png"/>
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/28a9d8948a.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <img src="assets/Logo.png" alt="Logo" class="logo">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-md-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="profile.html">profile</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+      </div>
+    </div>
+
+        <section class="mt-5 signup">
+            <div class="container-fluid h-custom">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-5 col-xl-5">
+                  <img src="assets/signup_logo.webp"
+                    class="img-fluid" alt="Sample image">
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+    
+                  <div class="alert-danger alert-dismissible fade" id="existing" role="alert">
+                    <i class="fas fa-exclamation-triangle"></i> &nbsp; Account already exist so, please try again with different Email
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+    
+                  <form id="signup">
+                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mt-5">
+                      <h1 class="h1 fw-normal mb-4 me-3">Sign up</h1>
+                    </div>
+          
+                    <!-- Email input -->
+                    <div class="form-outline mb-3">
+                        <label class="form-label" for="email">Email address</label>
+                      <input type="email" id="email" name="email" class="form-control form-control-lg"
+                        placeholder="Enter a valid email address" required/>
+                    </div>
+    
+                    <div class="form-outline mb-3">
+                        <label class="form-label" for="firstname">Firstname</label>
+                        <input type="text" id="firstname" minlength="3" name="firstname" class="form-control form-control-lg"
+                          placeholder="Enter your firstname" required/>
+                      </div>
+    
+                      <div class="form-outline mb-3">
+                          <label class="form-label" for="lastname">Lastname</label>
+                        <input type="text" id="lastname" name="lastname" class="form-control form-control-lg"
+                          placeholder="Enter your lastname" required/>
+                      </div>
+          
+                    <!-- Password input -->
+                    <div class="form-outline mb-3">
+                        <label class="form-label" for="password">Password</label>
+                      <input type="password" id="password" minlength="8" name="password" class="form-control form-control-lg"
+                        placeholder="Enter password" required/>
+                    </div>
+    
+                    <div class="form-outline mb-3">
+                        <label class="form-label" for="re-password">Confirm Password</label>
+                        <input type="password" id="re-password" name="re-password" class="form-control form-control-lg"
+                          placeholder="Re-Enter password" required/>
+                      </div>
+          
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                      <button  class="btn btn-primary btn-lg accountbtn"
+                         id="submit">Register</button>
+                      <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a href="login.html"
+                          class="link-danger">Login</a></p>
+                    </div>
+          
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+         
+          <!-- Link Script -->
+
+      <script src="js/register.js"></script>
+    
+</body>
+</html>

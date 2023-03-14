@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+.menu-bar{
+    background-image: linear-gradient(-90deg,#d38312,#a83279);
+}
+
+.nav-link{
+    font-size: 20px!important;
+    margin:5px;
+    font-weight: 400!important;
+    color: white!important;
+    opacity: 75%;
+}
+.nav-link:hover{
+   opacity: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(254, 253, 253)!important;
+}
+.blackhvr:hover{
+    color: black!important;
+}
+.active{
+    opacity: 100%;
+}
+.logo{
+    height: 39px;
+    width: 9.5rem;
+    margin-left: 5px;
+}
+.index_logo{
+    height: 80%;
+    width: 80%;
+    margin-left: 2rem;
+   
+}
+.login_logo{
+    height: 80%;
+    width: 80%;
+    margin-left: 3.5rem;
+}
+.navbar-nav{
+    text-align: right;
+    margin-right: 20px;
+}
+.navbar-brand{
+    font-size: 25px!important;
+    color:white!important;
+    margin:0;
+    font-weight: 600!important;
+}
+.login{
+    padding-top:40px;
+    padding-bottom: 30px;
+}
+.signup{
+    padding-bottom:30px;
+}
+.color{
+ background-image: linear-gradient(-90deg,#d38312,#a83279)!important; 
+}
+.m-b-20 {
+ margin-bottom: 20px;
+}
+.container{
+    margin-top:40px;
+    padding-bottom: 100px;
+}
+.z{
+    z-index: 5!important;
+}
+.del{
+    cursor: pointer;
+}
+.line{
+    position: relative;
+}
+.line::after{
+    height:5px;
+    width:0px;
+    content: "";
+    position: absolute;
+    margin-top: 5px;
+    display: block;
+    background-image: linear-gradient(-90deg,#d38312,#a83279);
+    animation: slide ease 2s forwards;
+}
+@keyframes slide { 
+    100%{
+    width: 200px;
+}}
+
+.in{
+    margin-top:4% !important;
+}
+.int{
+    margin-top: 8rem; 
+    margin-left: 5px;
+}
+.hello{
+    font-size: 60px !important;
+    font-weight:bolder !important;
+}
+.btnlogin{
+    font-size:22px !important; 
+    border-radius: 25px !important;
+    background-color:#a83279 !important; 
+    outline: none !important; 
+    border: none !important;
+}
+.btnlogout{
+    font-size:22px !important; 
+    border-radius: 25px !important; 
+    background-color:#d38312 !important; 
+    outline: none !important; 
+    border: none !important;
+}
+.btnlogoutfinal{
+    font-size:22px !important; 
+    border-radius: 25px !important; 
+    background-color:#a83279 !important; 
+    outline: none !important; 
+    border: none !important;
+}
+.accountbtn{
+    padding-left: 2.5rem !important; 
+    padding-right: 2.5rem !important;
+}
+.bgsection{
+    background-color: #eee !important;
+}
+.imagesize{
+    width: 150px !important;
+}
+.ash{
+    color: #333333 !important;
+}
+.skyblue{
+    color: #55acee !important;
+}
+.pink{
+    color: #ac2bac !important;
+}
+.darkblue{
+    color: #3b5998 !important;
+}
+.fontsize{
+    font-size: .77rem !important;
+}
+.divheight{
+    height: 5px !important;
+}
